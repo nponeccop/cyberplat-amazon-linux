@@ -1,4 +1,5 @@
 FROM amazonlinux
 RUN yum update -y
-RUN yum install -y npm
+RUN amazon-linux-extras install epel
+RUN yum install -y nodejs
 RUN npm i cyberplat
